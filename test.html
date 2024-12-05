@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation</title>
+    <style>
+        /* Reset default list styling */
+        nav ul {
+            list-style-type: none; /* 移除列表的圆点 */
+            margin: 0;             /* 移除默认外边距 */
+            padding: 0;            /* 移除默认内边距 */
+            display: flex;         /* 使用 Flexbox 布局 */
+            gap: 20px;             /* 增加菜单项之间的间距 */
+        }
+
+        nav li {
+            display: inline; /* 或者使用 inline-block */
+        }
+
+        nav a {
+            text-decoration: none; /* 移除链接下划线 */
+            color: #000;           /* 设置链接颜色 */
+            font-size: 16px;       /* 调整字体大小 */
+            padding: 10px;         /* 增加链接内边距 */
+            transition: color 0.3s; /* 添加鼠标悬停的过渡效果 */
+        }
+
+        nav a:hover {
+            color: #007BFF; /* 鼠标悬停时更改颜色 */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
