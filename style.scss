@@ -1,8 +1,12 @@
+@use 'section1.scss';
+
 $primary-color: rgb(23, 22, 22);
 $accent-color: aqua;
 $text-color: white;
 $black-color: black;
 $beige-color: beige;
+
+
 
 .sectionA {
   position: sticky;
