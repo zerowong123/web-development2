@@ -1,0 +1,398 @@
+
+article.section1{
+    width: 38rem;
+    height: 20rem;
+    align-items: center;
+    margin: auto; 
+    text-align: center;
+}
+article.section1 h1{
+    text-align: center;
+    font-size: 3.4rem;
+    color: #ff781b;
+}
+article.section1 p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+article.section-assistant{
+    width: 38rem;
+   //height: 20rem;
+    align-items: center;
+    margin: auto; 
+    text-align: center;
+}
+.highlighted-link {
+    color: #ff781b; 
+    text-decoration: none; 
+    }
+.highlighted-link:hover {
+    opacity: 70%; 
+    }
+.toggle-container {
+    position: relative;
+    width: 180px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    top: 26px;
+    left: 50%;
+}
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.toggle-btn.active {
+    background-color: #fffdfa; 
+}
+
+.toggle-btn.inactive {
+    background-color: #ffffff; 
+}
+
+/* Hover effect for inactive button */
+.toggle-btn.inactive:hover {
+    color: #88888899; /* More transparent on hover */
+}
+
+/* Indicator styling */
+.indicator {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    width: 50%;
+    height:35px;
+    background-color: #ff781b;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    z-index: 1; 
+    transition: left 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-btn:hover ~ .indicator {
+    transform: scaleX(1.05);
+}
+/* Hidden state for the indicator */
+.indicator.hidden {
+    display: none; /* Hide the indicator */
+}
+.indicator.active {  
+    transform: translateX(50%);
+}
+
+
+.content-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 80px;
+    min-height: 120vh;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 100vh;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    opacity: 1;
+    margin: 0;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.content-text-section1{
+    position: absolute;
+    width: 23.5rem;
+    bottom: 120px;
+    left: 60px;
+    text-align: start;    
+}
+
+.content-text-section2{
+    position: absolute;
+    width: 23.5rem;
+    bottom: 10px;
+    left: 60px;
+    text-align: start;    
+}
+
+.content-text-section-see{
+    display: block;
+    background-color: #fff0e8;
+    padding: 4rem 2rem;
+    border-radius: 120px;
+    position: absolute;
+    width: 19rem;
+    visibility: visible;
+    bottom: 10%;
+    right: 10px;
+    text-align: start;
+    z-index: 99;
+}
+
+#content1 {
+    background-image: url('/web-development2/images/humane-ask.webp');
+}
+#content2 {
+    background-image: url('/web-development2/images/humane_see.webp');
+}
+
+
+
+/* Flash effect when toggling content */
+.flash-effect {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.content p{    
+    width: 100%;
+    font-size: 2rem;
+}
+
+p.content-side-text-see ,
+p.content-side-text-see
+            {
+                font-size: 1rem;
+                color: #ff781b;
+                text-align: center;
+            }
+.content-text1{
+    color: #ff781b;      
+}
+
+.content-text3{
+    color: #ff781b;   
+}
+
+
+/* assistant section */
+article.section-assistant h1{
+    text-align: center;
+    font-size: 3.4rem;
+    color:#73a5e9;
+    //padding-top: 15rem;
+}
+article.section-assistant p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.toggle-container-assistant{
+    position: relative;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    top: 26px;
+    left: 35%;
+    
+}
+.toggle-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.toggle-btn.active {
+    background-color: #fffdfa;
+    font-weight: 800; 
+}
+
+.toggle-btn.inactive {
+    background-color: #ffffff; 
+}
+
+/* Hover effect for inactive button */
+.toggle-btn.inactive:hover {
+    color: #88888899; /* More transparent on hover */
+}
+
+/* Indicator styling */
+.indicator-blue {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    width: 100px;
+    height:35px;
+    background-color: #73a5e9;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    z-index: 1; /* Ensure indicator stays above the buttons */
+    transition: left 0.3s ease, transform 0.3s ease;
+}
+/* Hover effect for the indicator (scale the indicator) */
+.toggle-btn:hover ~ .indicator {
+    transform: scaleX(1.05);
+}
+/* Hidden state for the indicator */
+.indicator.hidden {
+    display: none; /* Hide the indicator */
+}
+.indicator.active {  
+    transform: translateX(50%); /* This centers the indicator */
+}
+
+
+.content-container-assistant {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10rem;
+    overflow: hidden;
+    border-radius: 80px;
+    min-height: 120vh;
+}
+
+.content-wrapper-assistant {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 100vh;
+}
+
+.content-assistant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    opacity: 1;
+    margin: 0;
+    
+
+    transition: opacity 0.5s ease, visibility 0s 0.5s; 
+}
+
+.content-text-section-n,
+.content-text-section-r,
+.content-text-section-c,
+.content-text-section-s
+{
+    position: absolute;
+    width: 23.5rem;
+    bottom: 10px;
+    left: 60px;
+    text-align: start; 
+       
+}
+
+.content-side-text p{
+    display: block;
+    background-color: #73a5e9;
+    padding: 4rem 2rem;
+    border-radius: 120px;
+    position: absolute;
+    height: 8rem;
+    width: 5rem;
+    visibility: visible;
+    bottom: 35%;
+    right: 10px;
+    text-align: start;
+    z-index: 99;
+    font-size: 1rem;
+    align-items: end;
+    text-align: center;
+}
+
+#content-suggest {
+    background-image: url('/web-development2/images/suggest.webp');
+
+}
+#content-note {
+    
+    background-image: url('/web-development2/images/note.webp');
+}
+#content-recall {
+
+    background-image: url('/web-development2/images/recall.webp');
+}
+#content-create {
+    background-image: url('/web-development2/images/create.webp');
+}
+
+
+
+/* Flash effect when toggling content */
+.flash-effect {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.content-assistant p{    
+    width: 100%;
+    font-size: 2rem;
+}
+
+.content-text-color{
+    color: #73a5e9;      
+}
+
