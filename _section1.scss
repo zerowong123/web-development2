@@ -3,7 +3,7 @@ article.section1{
     width: 38rem;
     height: 20rem;
     align-items: center;
-    margin: auto; 
+    margin: 10px; 
     text-align: center;
 }
 article.section1 h1{
@@ -37,7 +37,7 @@ article.section-assistant{
     display: flex;
     overflow: hidden;
     top: 26px;
-    left: 50%;
+    right: 50%;
 }
 .toggle-btn {
     flex: 1;
@@ -134,7 +134,7 @@ article.section-assistant{
     color: white;
     background-size: cover;
     opacity: 1;
-    margin: 0;
+    margin: 10px;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
@@ -214,7 +214,6 @@ article.section-assistant h1{
 article.section-assistant p{
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 100;
 }
 
 .toggle-container-assistant{
@@ -396,3 +395,6 @@ article.section-assistant p{
     color: #73a5e9;      
 }
 
+div#conten1.content{
+    margin: 1rem;
+}
